@@ -1,65 +1,81 @@
-## 📚 Document Q&A System
+# 📚 Document Q&A System
 
-This project is a Streamlit-based web application that allows users to upload PDF documents and ask questions about their content. The system uses advanced natural language processing techniques to provide accurate answers based on the document's content.
+This is a Streamlit-based application that allows users to upload PDF documents and ask questions about them. The system uses the `ChatGroq` model from LangChain and Google Generative AI Embeddings to provide accurate and concise answers based on the uploaded documents.
 
 ## ✨ Features
 
-📄 PDF document upload and processing
-❓ Question answering based on document content
-🔍 Vector store creation for efficient document retrieval
-🤖 Integration with Groq and Google AI for text processing and embeddings
-🖥️ User-friendly interface with Streamlit
+- 📄 Upload PDF documents and convert them into text.
+- 🗂️ Create a vector store from the text content of the PDFs.
+- ❓ Ask questions about the uploaded documents and receive accurate answers.
+- 🖥️ Interactive UI with Streamlit.
 
-## 🛠️ Technologies Used
+## 🚀 Getting Started
 
-🐍 Python
-🌊 Streamlit
-🔗 LangChain
-🚀 Groq
-🧠 Google AI
-📊 FAISS (Facebook AI Similarity Search)
-📑 PyPDF2
+### 📋 Prerequisites
 
-## 📋 Prerequisites
-Before you begin, ensure you have met the following requirements:
+Ensure you have the following installed:
 
-🐍 Python 3.7+
-📦 Pip package manager
+- 🐍 Python 3.8 or later
+- Streamlit
+- LangChain
+- FAISS
+- PyPDF2
+- dotenv
 
-🔧 Installation
+### 📦 Installation
 
-Clone the repository:
-Copygit clone https://github.com/Arjun9271/doc_qna.git
-cd document-qa-system
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/document-qa-system.git
+    cd document-qa-system
+    ```
 
-Install the required packages:
-Copypip install -r requirements.txt
+2. Create and activate a virtual environment:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
 
-Set up environment variables:
-Create a .env file in the project root and add the following:
-CopyGROQ_API_KEY=your_groq_api_key
-GOOGLE_API_KEY=your_google_api_key
+3. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
+4. Create a `.env` file in the root directory and add your API keys:
+    ```env
+    GROQ_API_KEY=your_groq_api_key
+    GOOGLE_API_KEY=your_google_api_key
+    ```
 
-## 🚀 Usage
+### ▶️ Running the Application
 
-Run the Streamlit app:
-Copystreamlit run app.py
+1. Run the Streamlit application:
+    ```sh
+    streamlit run app.py
+    ```
 
-Open your web browser and navigate to the URL provided by Streamlit (usually http://localhost:8501).
-Upload a PDF document using the file uploader in the sidebar.
-Click on "Process PDF and Create Vector Store" to process the document and create the vector store.
-Once the vector store is created, you can ask questions about the document content in the main panel.
-Click "Submit Question" to get answers based on the document content.
+2. Open your web browser and navigate to `http://localhost:8501` to view the application.
+
+### 💡 Usage
+
+1. **Upload PDF:** Use the sidebar to upload your PDF document.
+2. **Create Vector Store:** After uploading, click the button to process the PDF and create the vector store.
+3. **Ask Questions:** Enter your question in the provided input field and submit it to get an answer based on the uploaded document.
+
+## 🛠️ Customization
+
+- **🎨 Custom CSS:** You can modify the custom CSS in the `app.py` file to change the appearance of the application.
+- **📜 Prompt Template:** The prompt template used for generating answers can be adjusted in the `app.py` file to better suit your needs.
 
 ## 📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
-📞 Contact
-If you have any questions or feedback, please open an issue on the GitHub repository.
-## 🙏 Acknowledgements
 
-🌊 Streamlit
-🔗 LangChain
-🚀 Groq
-🧠 Google AI
-📊 FAISS
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Streamlit](https://streamlit.io/)
+- [LangChain](https://www.langchain.com/)
+- [FAISS](https://github.com/facebookresearch/faiss)
+- [PyPDF2](https://pypdf2.readthedocs.io/)
+
+Built with ❤️ using Streamlit and LangChain.
