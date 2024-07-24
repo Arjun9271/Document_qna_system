@@ -26,7 +26,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/document-qa-system.git
+    git clone https://github.com/Arjun9271/doc_qna.git
     cd document-qa-system
     ```
 
