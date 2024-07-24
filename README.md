@@ -1,6 +1,8 @@
-📚 Document Q&A System
+## 📚 Document Q&A System
+
 This project is a Streamlit-based web application that allows users to upload PDF documents and ask questions about their content. The system uses advanced natural language processing techniques to provide accurate answers based on the document's content.
-✨ Features
+
+## ✨ Features
 
 📄 PDF document upload and processing
 ❓ Question answering based on document content
@@ -8,7 +10,7 @@ This project is a Streamlit-based web application that allows users to upload PD
 🤖 Integration with Groq and Google AI for text processing and embeddings
 🖥️ User-friendly interface with Streamlit
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 🐍 Python
 🌊 Streamlit
@@ -18,7 +20,7 @@ This project is a Streamlit-based web application that allows users to upload PD
 📊 FAISS (Facebook AI Similarity Search)
 📑 PyPDF2
 
-📋 Prerequisites
+## 📋 Prerequisites
 Before you begin, ensure you have met the following requirements:
 
 🐍 Python 3.7+
@@ -39,7 +41,7 @@ CopyGROQ_API_KEY=your_groq_api_key
 GOOGLE_API_KEY=your_google_api_key
 
 
-🚀 Usage
+## 🚀 Usage
 
 Run the Streamlit app:
 Copystreamlit run app.py
@@ -50,11 +52,11 @@ Click on "Process PDF and Create Vector Store" to process the document and creat
 Once the vector store is created, you can ask questions about the document content in the main panel.
 Click "Submit Question" to get answers based on the document content.
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 📞 Contact
 If you have any questions or feedback, please open an issue on the GitHub repository.
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 
 🌊 Streamlit
 🔗 LangChain
